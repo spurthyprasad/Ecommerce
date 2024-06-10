@@ -1,0 +1,68 @@
+/* ListProduct.css */
+ 
+.list-product {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+   
+  .list-product h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+   
+  .listproduct-format-main {
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr 1fr 1fr 50px;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+  }
+   
+  .listproduct-format-main p {
+    margin: 0;
+    font-weight: bold;
+    color: #555;
+  }
+   
+  .listproduct-format-main .listproduct-product-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+   
+  .listproduct-allproducts {
+    margin-top: 20px;
+  }
+   
+  .listproduct-format {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr 1fr 1fr 50px;
+    align-items: center;
+    gap: 10px;
+  }
+   
+  .listproduct-format p {
+    margin: 0;
+    color: #333;
+  }
+   
+  .listproduct-remove-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+   
+  hr {
+    border: none;
+    border-top: 1px solid #eee;
+  }

@@ -7,7 +7,7 @@ export const AddProduct = () => {
   const [productDetails,setProductDetails]=useState({
     name:"",
     image:"",
-    category:"",
+    category:"women",
     new_price:"",
     old_price:""
   })
@@ -43,7 +43,7 @@ export const AddProduct = () => {
           method:'POST',
           headers:{
             Accept:'applicaton/json',
-            'Content-Type':'application/json'
+            'Content-Type':'application/json',
           },
           body:JSON.stringify(product),
         }).then((resp)=>resp.json()).then((data)=>{
@@ -72,7 +72,7 @@ export const AddProduct = () => {
         </div>
         <div className="addproduct-itemfield">
             <p>Product Category</p>
-            <select value={productDetails.category} onChange={changeHandler} type='category' className='add-product-selector'>
+            <select value={productDetails.category} onChange={changeHandler} type='text' className='add-product-selector'>
               <option value="women">Women</option>
               <option value="men">Men</option>
               <option value="kid">Kid</option>
