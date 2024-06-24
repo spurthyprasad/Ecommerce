@@ -72,7 +72,7 @@ export const AddProduct = () => {
         </div>
         <div className="addproduct-itemfield">
             <p>Product Category</p>
-            <select value={productDetails.category} onChange={changeHandler} type='text' className='add-product-selector'>
+            <select value={productDetails.category} onChange={changeHandler} name='category' type='text' className='add-product-selector'>
               <option value="women">Women</option>
               <option value="men">Men</option>
               <option value="kid">Kid</option>
